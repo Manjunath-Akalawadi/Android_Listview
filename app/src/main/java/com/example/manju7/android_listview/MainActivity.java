@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        title=new String[]{"google","facebook","insta","amazon","apple"};
-        description=new String[]{"google","facebook","insta","amazon","apple"};
-        icon=new int[]{R.drawable.google,R.drawable.facebook,R.drawable.insta,R.drawable.amazon,R.drawable.apple};
+        title=new String[]{"Google","Facebook","Instagram","Amazon","Apple","Flipkart"};
+        description=new String[]{"Internet-related services and products","Online social media","Photo and video-sharing","Electronic commerce","Electronics","Electronic commerce"};
+        icon=new int[]{R.drawable.google,R.drawable.facebook,R.drawable.insta,R.drawable.amazon,R.drawable.apple,R.drawable.flipkart};
 
         listView=(ListView)findViewById(R.id.listview);
 

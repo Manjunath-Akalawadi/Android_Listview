@@ -82,43 +82,51 @@ public class ListviewAdaptor extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
 
-                    if(modelList.get(position).getTitle().equals("google")){
+                    if(modelList.get(position).getTitle().equals("Google")){
 
                         Intent intent=new Intent(context,NewActivity.class);
                         intent.putExtra("actionBarTitle","Google");
-                        intent.putExtra("content","Search Engine");
+                        intent.putExtra("content","online advertising technologies, search engine, cloud computing, software, and hardware");
                         context.startActivity(intent);
                     }
 
-                    if(modelList.get(position).getTitle().equals("facebook")){
+                    if(modelList.get(position).getTitle().equals("Facebook")){
 
                         Intent intent=new Intent(context,NewActivity.class);
                         intent.putExtra("actionBarTitle","Facebook");
-                        intent.putExtra("content","Social Media");
+                        intent.putExtra("content","Online social media and social networking service");
                         context.startActivity(intent);
                     }
 
-                    if(modelList.get(position).getTitle().equals("insta")){
+                    if(modelList.get(position).getTitle().equals("Instagram")){
 
                         Intent intent=new Intent(context,NewActivity.class);
                         intent.putExtra("actionBarTitle","Instagram");
-                        intent.putExtra("content","Photo Sharing ");
+                        intent.putExtra("content","Photo and video-sharing social networking service");
                         context.startActivity(intent);
                     }
 
-                    if(modelList.get(position).getTitle().equals("amazon")){
+                    if(modelList.get(position).getTitle().equals("Amazon")){
 
                         Intent intent=new Intent(context,NewActivity.class);
                         intent.putExtra("actionBarTitle","Amazon");
-                        intent.putExtra("content","Shopping");
+                        intent.putExtra("content","Electronic commerce and cloud computing company");
                         context.startActivity(intent);
                     }
 
-                    if(modelList.get(position).getTitle().equals("apple")){
+                    if(modelList.get(position).getTitle().equals("Apple")){
 
                         Intent intent=new Intent(context,NewActivity.class);
                         intent.putExtra("actionBarTitle","Apple");
-                        intent.putExtra("content","Electronics");
+                        intent.putExtra("content","Designs, develops, and sells consumer electronics, computer software, and online services");
+                        context.startActivity(intent);
+                    }
+
+                    if(modelList.get(position).getTitle().equals("Flipkart")){
+
+                        Intent intent=new Intent(context,NewActivity.class);
+                        intent.putExtra("actionBarTitle","Flipkart");
+                        intent.putExtra("content","Electronic commerce company based in Bengaluru");
                         context.startActivity(intent);
                     }
 
@@ -132,25 +140,5 @@ public class ListviewAdaptor extends BaseAdapter {
     }
 
 
-    public void filter(String charText){
 
-        charText=charText.toLowerCase(Locale.getDefault());
-        modelList.clear();
-
-        if (charText.length()==0){
-
-                modelList.addAll(arrayList);
-        }else {
-
-            for (Model model:  arrayList){
-
-                if (model.getTitle().toLowerCase(Locale.getDefault()).contains(charText)){
-
-                    modelList.add(model);
-                }
-            }
-
-        }
-            notifyDataSetChanged();
-    }
 }
