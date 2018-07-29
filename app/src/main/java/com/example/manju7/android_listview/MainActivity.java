@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ActionBar actionBar=getSupportActionBar();
-        actionBar.setTitle("List of MNC compnaies");
+        actionBar.setTitle("MNC List");
 
 
 
